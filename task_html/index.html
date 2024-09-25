@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profil Salman">
+    <title>Profil Salman</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Profil Salman</h1>
+        <nav>
+            <table>
+                <tr>
+                    <td>
+                        <a href="#home">Home</a>
+                    </td>
+                    <td>
+                        <a href="#about">About Me</a>
+                    </td>
+                    <td>
+                        <a href="#gallery">Gallery</a>
+                    </td>
+                    <td>
+                        <a href="#contact">Contact</a>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section id="home">
+            <article>
+                <h2>Selamat Datang di Profil Saya</h2>
+                <p>Halo, saya Salman, seorang mahasiswa Informatika di ITERA. Saya sedang belajar tentang pembuatan website dan pemrograman komputer.</p>
+                <blockquote>"Pendidikan adalah senjata paling ampuh yang bisa digunakan untuk mengubah dunia." – Nelson Mandela</blockquote>
+                <figure>
+                    <img src="assets/profile.jpg" alt="Foto Salman" width="200">
+                    <figcaption>Gambar 1: Salman sedang belajar coding</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="about">
+            <article>
+                <h2>Tentang Saya</h2>
+                <table border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <th>Informasi Pribadi</th>
+                        <th>Detail</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Nama:</strong></td>
+                        <td>Muhammad Salman Azizi</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NIM:</strong></td>
+                        <td>122140131</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Universitas:</strong></td>
+                        <td>Institut Teknologi Sumatera (ITERA)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Minat:</strong></td>
+                        <td>Pengembangan web, Keamanan siber</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hobi:</strong></td>
+                        <td>Membaca, Coding, Mengikuti seminar teknologi</td>
+                    </tr>
+                </table>
+                <video width="320" height="240" controls>
+                    <source src="assets/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <ul>
+                <li><img src="assets/gallery1.jpg" alt="Gallery Image 1" width="100"></li>
+                <li><img src="assets/gallery2.jpg" alt="Gallery Image 2" width="100"></li>
+                <li><img src="assets/gallery3.jpg" alt="Gallery Image 3" width="100"></li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <article>
+                <h2>Kontak</h2>
+                <form action="/submit-form" method="post">
+                    <label for="name"><strong>Nama:</strong></label><br>
+                    <input type="text" id="name" name="name"><br>
+                    
+                    <label for="email"><strong>Email:</strong></label><br>
+                    <input type="email" id="email" name="email"><br>
+                    
+                    <label for="message"><strong>Pesan:</strong></label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                    
+                    <button type="submit">Kirim</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2024 Profil Salman. All rights reserved.</p>
+        <address>
+            <strong>Email:</strong> <a href="mailto:salman@example.com">salman@example.com</a><br>
+            <strong>Alamat:</strong> Jalan Contoh No. 123, Lampung
+        </address>
+    </footer>
+</body>
+</html>
