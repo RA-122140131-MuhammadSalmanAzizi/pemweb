@@ -54,90 +54,92 @@
                 <h2 class="section-title">Join the Stardust Family</h2>
                 
                 <div id="form" class="form-container">
-                    <form action="table.html" method="GET" class="interactive-form" itemscope itemtype="http://schema.org/JoinAction">
-                        <!-- Full Name -->
-                        <div class="form-group">
-                            <label for="name" class="form-label">
-                                <i class="fas fa-user"></i> Full Name:
-                            </label>
-                            <input type="text" id="name" name="name" required itemprop="name">
-                        </div>
-
-                        <!-- Email Address -->
-                        <div class="form-group">
-                            <label for="email" class="form-label">
-                                <i class="fas fa-envelope"></i> Email Address:
-                            </label>
-                            <input type="email" id="email" name="email" required itemprop="email">
-                        </div>
-
-                        <!-- Date of Birth -->
-                        <div class="form-group">
-                            <label for="birthdate" class="form-label">
-                                <i class="fas fa-calendar-alt"></i> Date of Birth:
-                            </label>
-                            <input type="date" id="birthdate" name="birthdate" required itemprop="birthDate">
-                        </div>
-
-                        <!-- Favorite Song -->
-                        <div class="form-group">
-                            <label class="form-label">
-                                <i class="fas fa-music"></i> Favorite Jae-Hoon Song:
-                            </label>
-                            <div class="radio-group">
-                                <input type="radio" id="song1" name="favorite_song" value="Starlight" required>
-                                <label for="song1">Starlight</label>
+                    <form action="table.html" method="GET" class="interactive-form" itemscope itemtype="http://schema.org/Organization">
+                        <div itemprop="memberOf" itemscope itemtype="http://schema.org/ContactPoint">
+                            <!-- Full Name -->
+                            <div class="form-group">
+                                <label for="name" class="form-label">
+                                    <i class="fas fa-user"></i> Full Name:
+                                </label>
+                                <input type="text" id="name" name="name" required itemprop="name">
                             </div>
-                            <div class="radio-group">
-                                <input type="radio" id="song2" name="favorite_song" value="Moonlight Serenade">
-                                <label for="song2">Moonlight Serenade</label>
+                
+                            <!-- Email Address -->
+                            <div class="form-group">
+                                <label for="email" class="form-label">
+                                    <i class="fas fa-envelope"></i> Email Address:
+                                </label>
+                                <input type="email" id="email" name="email" required itemprop="email">
                             </div>
-                            <div class="radio-group">
-                                <input type="radio" id="song3" name="favorite_song" value="Electric Dreams">
-                                <label for="song3">Electric Dreams</label>
+                
+                            <!-- Date of Birth -->
+                            <div class="form-group">
+                                <label for="birthdate" class="form-label">
+                                    <i class="fas fa-calendar-alt"></i> Date of Birth:
+                                </label>
+                                <input type="date" id="birthdate" name="birthdate" required>
+                            </div>
+                
+                            <!-- Favorite Song -->
+                            <div class="form-group">
+                                <label class="form-label">
+                                    <i class="fas fa-music"></i> Favorite Jae-Hoon Song:
+                                </label>
+                                <div class="radio-group">
+                                    <input type="radio" id="song1" name="favorite_song" value="Starlight" required>
+                                    <label for="song1">Starlight</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" id="song2" name="favorite_song" value="Moonlight Serenade">
+                                    <label for="song2">Moonlight Serenade</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" id="song3" name="favorite_song" value="Electric Dreams">
+                                    <label for="song3">Electric Dreams</label>
+                                </div>
+                            </div>
+                
+                            <!-- Interests -->
+                            <div class="form-group">
+                                <label class="form-label">
+                                    <i class="fas fa-heart"></i> Interests (check all that apply):
+                                </label>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="interest-music" name="interests[]" value="music">
+                                    <label for="interest-music">Music</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="interest-dance" name="interests[]" value="dance">
+                                    <label for="interest-dance">Dance</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="interest-fashion" name="interests[]" value="fashion">
+                                    <label for="interest-fashion">Fashion</label>
+                                </div>
+                            </div>
+                
+                            <!-- Create a Password -->
+                            <div class="form-group">
+                                <label for="password" class="form-label">
+                                    <i class="fas fa-lock"></i> Create a Password:
+                                </label>
+                                <input type="password" id="password" name="password" required>
+                                <div class="password-strength">
+                                    <div class="strength-bar"></div>
+                                    <span class="strength-text"></span>
+                                </div>
+                            </div>
+                
+                            <!-- Message for Jae-Hoon -->
+                            <div class="form-group">
+                                <label for="fan-message" class="form-label">
+                                    <i class="fas fa-comment"></i> Message for Jae-Hoon:
+                                </label>
+                                <textarea id="fan-message" name="fan_message" rows="4" maxlength="200" itemprop="description"></textarea>
+                                <div class="character-count">0 / 200</div>
                             </div>
                         </div>
-
-                        <!-- Interests -->
-                        <div class="form-group">
-                            <label class="form-label">
-                                <i class="fas fa-heart"></i> Interests (check all that apply):
-                            </label>
-                            <div class="checkbox-group">
-                                <input type="checkbox" id="interest-music" name="interests[]" value="music">
-                                <label for="interest-music">Music</label>
-                            </div>
-                            <div class="checkbox-group">
-                                <input type="checkbox" id="interest-dance" name="interests[]" value="dance">
-                                <label for="interest-dance">Dance</label>
-                            </div>
-                            <div class="checkbox-group">
-                                <input type="checkbox" id="interest-fashion" name="interests[]" value="fashion">
-                                <label for="interest-fashion">Fashion</label>
-                            </div>
-                        </div>
-
-                        <!-- Create a Password -->
-                        <div class="form-group">
-                            <label for="password" class="form-label">
-                                <i class="fas fa-lock"></i> Create a Password:
-                            </label>
-                            <input type="password" id="password" name="password" required>
-                            <div class="password-strength">
-                                <div class="strength-bar"></div>
-                                <span class="strength-text"></span>
-                            </div>
-                        </div>
-
-                        <!-- Message for Jae-Hoon -->
-                        <div class="form-group">
-                            <label for="fan-message" class="form-label">
-                                <i class="fas fa-comment"></i> Message for Jae-Hoon:
-                            </label>
-                            <textarea id="fan-message" name="fan_message" rows="4" maxlength="200"></textarea>
-                            <div class="character-count">0 / 200</div>
-                        </div>
-
+                
                         <!-- Submit Button -->
                         <button type="submit" class="submit-btn">
                             <i class="fas fa-star"></i> Join Fan Club
